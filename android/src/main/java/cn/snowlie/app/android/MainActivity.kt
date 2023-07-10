@@ -16,13 +16,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import cn.snowlie.app.common.MyApp
+import cn.snowlie.app.common.WaterCounter
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             MaterialTheme{
-                MyApp()
+                WaterCounter()
             }
         }
     }
