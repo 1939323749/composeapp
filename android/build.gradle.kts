@@ -14,6 +14,8 @@ repositories {
 dependencies {
     implementation(project(":common"))
     implementation("androidx.activity:activity-compose:1.5.0")
+    implementation("com.acornui:gdx-font-processor:0.5.49")
+    implementation("com.acornui:gdx-font-processor:0.5.49")
 }
 
 android {

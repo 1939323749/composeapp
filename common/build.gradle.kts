@@ -1,5 +1,3 @@
-import org.jetbrains.compose.compose
-
 plugins {
     kotlin("multiplatform")
     id("org.jetbrains.compose")
@@ -16,6 +14,8 @@ kotlin {
         implementation("androidx.compose.material3:material3:1.0.1")
         implementation("androidx.compose.material3:material3-window-size-class:1.0.1")
         implementation("androidx.compose.material:material-icons-extended:1.0.1")
+        implementation("com.acornui:gdx-font-processor:0.5.49")
+        implementation("com.acornui:gdx-font-processor:0.5.49")
     }
     android()
     jvm("desktop") {
@@ -60,4 +60,8 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+}
+dependencies {
+    implementation("com.acornui:gdx-font-processor:0.5.49")
+    implementation("com.acornui:gdx-font-processor:0.5.49")
 }

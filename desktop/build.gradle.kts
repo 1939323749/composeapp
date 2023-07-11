@@ -21,6 +21,7 @@ kotlin {
                 implementation("androidx.compose.material:material:1.4.3")
                 implementation("androidx.compose.material3:material3:1.1.1")
                 implementation("androidx.compose.material3:material3-window-size-class:1.1.1")
+                implementation("com.acornui:gdx-font-processor:0.5.49")
             }
         }
         val jvmTest by getting
