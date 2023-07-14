@@ -7,6 +7,8 @@ plugins {
 group = "cn.snowlie.app"
 version = "1.0-SNAPSHOT"
 
+val ktorversion = "2.3.2"
+
 kotlin {
     dependencies {
         implementation("androidx.compose.foundation:foundation:1.0.1")
@@ -27,6 +29,12 @@ kotlin {
                 api(compose.runtime)
                 api(compose.foundation)
                 api(compose.material)
+                implementation("io.ktor:ktor-client-core:$ktorversion")
+                implementation("io.ktor:ktor-client-json:$ktorversion")
+                implementation("io.ktor:ktor-client-serialization:$ktorversion")
+                implementation("io.ktor:ktor-client-logging:$ktorversion")
+                implementation("io.ktor:ktor-client-cio:$ktorversion")
+                implementation("io.ktor:ktor-client-json-jvm:$ktorversion")
             }
         }
         val commonTest by getting {
